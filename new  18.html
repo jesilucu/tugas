@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+<p>Enter a number and click OK:</p>
+<input id="id1"type="number" min="100">
+<button onclick="myFunction()">OK</button>
+<p>if the numberis less than 100(the input's min attribute), an error message will be displayed.</p>
+<p id="demo"></p>
+<script>
+function myFunction(){
+var txt = "";
+if(document.getElementBYId("id1").validity.rangeUnderflow){
+txt = "value too small";
+}else {
+tst = "input ok";
+}
+document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>

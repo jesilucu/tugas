@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<HTML>
+<BODY><H2>JAVASCRIPT CAN VALIDATE INPUT</H2>
+<P>PLEASE INPUT A NUMBER BETWEEN 1 AND 10:</P>
+<INPUT ID="NUMB">
+<BUTTON TYPE="BUTTON" ONCLICK="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myfunction(){
+var x, text;
+//Get the value of the input field with="numb"
+x = document.getElementById("numb").value;
+//iF X IS Not a number or less than one or greater than 10if(isNaN(x) || x < 1 || x> 10) {
+text = "Input not valid";
+}else {
+text = "Input OK";
+}
+document.getElementById("demo").innerHTML = TEXT;
+}
+</SCRIPT>
+</BODY>
+</HTML>

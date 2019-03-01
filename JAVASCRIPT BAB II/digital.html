@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MEMBUAT JAM DIGITAL SENDIRI</title>
+<p><b><center><b><i>Jam Hello Kitty</i></b></center></p>
+<p> JESIKA ARYANI<P>
+<P> MAHASISWI TERBAIK</P>
+<P>UNIVERSITAS NEGERI PADANG</P>
+<P> TETAP SEMANGAT MESKIPUN MASIH ULANG MATAKUL DAN MKU </P>
+<P>JANGAN SIA-SIAKAN WAKTUMU CANTIK</P>
+<script type="text/javascript">
+ window.onload = function() { jam(); }
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+  e.innerHTML = h +':'+ m +':'+ s;
+  setTimeout('jam()', 1000);
+ }
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+<body>
+<center>
+<h1 style="font-size: 180px; font-family: verdana;" id="jam"></h1>
+</center>
+</body>
+</html>
